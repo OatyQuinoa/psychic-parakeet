@@ -1,3 +1,14 @@
+* { /* Reset some default styles for consistency across browsers */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+Padding is the space inside an element, between the content and the border.
+Margin is the space outside an element, creating distance from surrounding elements.
+*/
+
 p {
     color: blue;
     font-size: 16px
@@ -7,44 +18,37 @@ h2 {
     color: red;
 }
 
-/* Reset default margin and padding */
-* {
-    margin: 0;
+nav {
+    background-color: grey;
+    padding: 10px 20px;
+    margin: 30px 10px 30px 10px;
+}
+
+nav ul { /* targets ul portion of nav bar*/
+    margin: 0; /* format: top right bottom left */
     padding: 0;
-    box-sizing: border-box;
-  }
+    list-style: none;
+}
+
+nav ul { 
+    display: flex; /* Aligns list items horizontally */
+    justify-content: center; /* Center list items */
+}
+
+nav li {
+    margin: 0 15px; /* Adds space between list items */
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none; /* Removes the default underline on links */
+    color: white; /* Sets link text to white */
+    font-size: 18px; /* Adjusts font size for better readability */
+    padding: 8px 12px; /* Adds padding to make links look like buttons */
+    border-radius: 5px; /* Rounds the corners of the link buttons */
+    transition: background-color 0.3s ease; /* Adds hover animation */
+}
   
-  /* Basic styles for the body */
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Styling the navigation bar */
-  nav {
-    background-color: #333; /* Dark background color */
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex; /* Horizontal alignment */
-    justify-content: center; /* Center the items */
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    margin: 0 20px; /* Spacing between items */
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: block;
-    text-align: center;
-  }
-  
-  nav ul li a:hover {
-    background-color: #575757; /* Change background color on hover */
-  }
-  
+nav a:hover {
+    background-color: #555; /* Darker background on hover */
+}
