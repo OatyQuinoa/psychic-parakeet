@@ -18,3 +18,49 @@
     <p>&copy; 2024 Your Name</p>
   </footer>
   <script src="script.js"></script> <!-- Link to your JavaScript file -->
+
+
+
+NAV BAR CSS
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styles for the body */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling the navigation bar */
+  nav {
+    background-color: #333; /* Dark background color */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex; /* Horizontal alignment */
+    justify-content: center; /* Center the items */
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 20px; /* Spacing between items */
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    text-align: center;
+  }
+  
+  nav ul li a:hover {
+    background-color: #575757; /* Change background color on hover */
+  }
+  
