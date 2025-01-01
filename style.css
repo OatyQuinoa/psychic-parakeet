@@ -19,9 +19,9 @@ h2 {
 }
 
 nav {
-    background-color: grey;
+    background-color: red;
     padding: 10px 20px;
-    margin: 30px 10px 30px 10px;
+    /*margin: 30px 10px 30px 10px;*/
 }
 
 nav ul { /* targets ul portion of nav bar*/
