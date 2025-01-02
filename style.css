@@ -14,7 +14,7 @@ html {
 }
 
 p {
-    color: blue;
+    color: white;
     font-size: 16px
 }
 
@@ -58,7 +58,8 @@ nav a:hover {
 }
 
 .sections {
-    margin: 75px 100px 75px 100px
+    margin: 75px 100px 75px 100px;
+    background-color: grey;
 }
 
 .sections h1 {
@@ -71,13 +72,32 @@ img {
     height: auto;
 }
 
-.sections ul {
+.sections ul { /* Align each element within <ul> tag horizontally in flex box*/
     list-style: none;
     display: flex;
+    /*justify-content: space-between;*/
+    flex-direction: row; /* By default set to row; displays list items in spaced-out row*/
+    gap: 20px; /*Adds gap/space in between child elements of flex box; not particularly noticeable if `justify-content: space-between;` is used*/
+    flex-wrap: wrap;
+}
+
+.sections > * { /* targets all direct child elements under sections class */
+    margin: 0
 }
 
 .sections li {
     /*margin: 0px 20px 0px 20px;*/
+    flex: 1 1 200px; /* flex: <flex-grow> <flex-shrink> <flex-basis>; */
+    background-color: red;
     padding: 0px 10px;
+    overflow: auto; /* Allows scrolling if the content overflows */
+    padding: 10px;
 }
 
+.sections li img {
+    flex: 1 1 250px;
+    object-fit: contain; /*Or cover*/
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+}
