@@ -9,6 +9,10 @@ Padding is the space inside an element, between the content and the border.
 Margin is the space outside an element, creating distance from surrounding elements.
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 p {
     color: blue;
     font-size: 16px
@@ -54,5 +58,26 @@ nav a:hover {
 }
 
 .sections {
-    margin: 100px 100px 100px 100px
+    margin: 75px 100px 75px 100px
 }
+
+.sections h1 {
+    margin: 10px 0px 10px 0px;
+}
+
+img {
+    max-height: 250px;
+    max-width: 250px;
+    height: auto;
+}
+
+.sections ul {
+    list-style: none;
+    display: flex;
+}
+
+.sections li {
+    /*margin: 0px 20px 0px 20px;*/
+    padding: 0px 10px;
+}
+
