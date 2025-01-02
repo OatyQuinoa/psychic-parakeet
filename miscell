@@ -64,3 +64,22 @@ NAV BAR CSS
     background-color: #575757; /* Change background color on hover */
   }
   
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+  ul {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to new lines if needed */
+    gap: 20px; /* Adjusts spacing between list items */
+  }
+  
+  li {
+    flex: 1 1 200px; /* Allow each list item to take at least 200px width, but grow if needed */
+    max-width: 300px; /* Prevents the list items from getting too wide */
+    height: 150px; /* Set a fixed height for each list item */
+    overflow: auto; /* Allows scrolling if the content overflows */
+    background-color: lightgray; /* For visualization */
+    padding: 10px; /* Adds some padding inside the list item */
+    box-sizing: border-box; /* Ensures padding and border are included in the width/height calculation */
+    word-wrap: break-word; /* Breaks words to avoid overflow */
+  }
+  
