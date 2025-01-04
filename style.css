@@ -64,6 +64,7 @@ nav a:hover {
 
 .sections h1 {
     margin: 10px 0px 10px 0px;
+    background-color: grey;
 }
 
 img {
@@ -79,10 +80,6 @@ img {
     flex-direction: row; /* By default set to row; displays list items in spaced-out row*/
     gap: 20px; /*Adds gap/space in between child elements of flex box; not particularly noticeable if `justify-content: space-between;` is used*/
     flex-wrap: wrap;
-}
-
-.sections > * { /* targets all direct child elements under sections class */
-    margin: 0
 }
 
 .sections li {
