@@ -87,7 +87,7 @@ img {
 
 .sections li {
     /*margin: 0px 20px 0px 20px;*/
-    flex: 1 1 200px; /* flex: <flex-grow> <flex-shrink> <flex-basis>; */
+    flex: 1 1 200px; /* flex: <flex-grow> <flex-shrink> <flex-basis>; */ /* Sets flex list item size with a base size of 250px */
     background-color: red;
     padding: 0px 10px;
     overflow: auto; /* Allows scrolling if the content overflows */
