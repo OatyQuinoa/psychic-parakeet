@@ -22,10 +22,15 @@ h2 {
     color: red;
 }
 
+/* Top navigation bar */
+
 #topnav {
     background-color: red;
     padding: 10px 20px;
     /*margin: 30px 10px 30px 10px;*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 #topnav ul { /* targets ul portion of nav bar*/
@@ -52,6 +57,28 @@ h2 {
   
 #topnav a:hover {
     background-color: #555; /* Darker background on hover */
+}
+
+/* FOOTER - Bottom navigation bar */
+
+#bottomnav {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px 25px 100px
+}
+
+#bottomnav a {
+    text-decoration: none;
+}
+
+#bottomnav a:hover {
+    text-decoration: underline;
+}
+
+#footertext {
+    text-align: center;
 }
 
 /* Sections */
