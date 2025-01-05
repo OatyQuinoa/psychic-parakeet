@@ -28,10 +28,21 @@ h2 {
     background-color: red;
     padding: 10px 20px;
     /*margin: 30px 10px 30px 10px;*/
-    position: sticky;
+    position: fixed; 
+    /* Use sticky if you want the navbar to stay visible temporarily but scroll away when its parent container ends.
+    Use fixed if you want the navbar to remain visible at all times */
     top: 0;
     z-index: 1000;
+    width: 100%;
+    height: 60px;
 }
+
+/*
+When using position: fixed, the fixed element (like your nav bar) doesn’t move with the rest of the content when you scroll.
+`position: fixed` of the nav bar stays pinned to a specific spot in the viewport, based on properties like top: 0, left: 0, or other offsets you define. 
+`position: fixed` removes the nav bar from Normal Document Flow (default behavior where elements are stacked in HTML order)
+Since it's removed from Normal Document Flow, it is superimposes on the current webpage - like a layer above the current webpage 
+*/
 
 #topnav ul { /* targets ul portion of nav bar*/
     margin: 0; /* format: top right bottom left */
