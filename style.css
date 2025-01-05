@@ -22,29 +22,26 @@ h2 {
     color: red;
 }
 
-nav {
+#topnav {
     background-color: red;
     padding: 10px 20px;
     /*margin: 30px 10px 30px 10px;*/
 }
 
-nav ul { /* targets ul portion of nav bar*/
+#topnav ul { /* targets ul portion of nav bar*/
     margin: 0; /* format: top right bottom left */
     padding: 0;
     list-style: none;
-}
-
-nav ul { 
     display: flex; /* Aligns list items horizontally */
     justify-content: center; /* Center list items */
 }
 
-nav li {
+#topnav li {
     margin: 0 15px; /* Adds space between list items */
     padding: 10px;
 }
 
-nav a {
+#topnav a {
     text-decoration: none; /* Removes the default underline on links */
     color: white; /* Sets link text to white */
     font-size: 18px; /* Adjusts font size for better readability */
@@ -53,7 +50,7 @@ nav a {
     transition: background-color 0.3s ease; /* Adds hover animation */
 }
   
-nav a:hover {
+#topnav a:hover {
     background-color: #555; /* Darker background on hover */
 }
 
