@@ -101,6 +101,7 @@ Since it's removed from Normal Document Flow, it is superimposes on the current 
 
 .sections h1 {
     margin: 10px 0px 10px 0px;
+    padding: 10px;
 }
 
 img {
