@@ -104,6 +104,11 @@ Since it's removed from Normal Document Flow, it is superimposes on the current 
     padding: 8px;
 }
 
+.sections p {
+    padding: 10px;
+}
+
+
 img {
     max-height: 250px;
     max-width: 250px;
