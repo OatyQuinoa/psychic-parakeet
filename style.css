@@ -117,7 +117,7 @@ img {
 
 .sections ul { /* Align each element within <ul> tag horizontally in flex box*/
     list-style: none;
-    display: flex; /* Set flex box for <ul> */
+    display: flex; /* Set flex box for <ul> (unordered list), to which list items are added*/
     /*justify-content: space-between;*/
     flex-direction: row; /* By default set to row; displays list items in spaced-out row*/
     gap: 20px; /*Adds gap/space in between child elements of flex box; not particularly noticeable if `justify-content: space-between;` is used*/
@@ -127,7 +127,7 @@ img {
 .sections li { 
     /*margin: 0px 20px 0px 20px;*/
     flex: 1 1 200px; /* flex: <flex-grow> <flex-shrink> <flex-basis>; */ /* Sets flex list item size with a base size of 250px */
-    background-color: green;
+    background-color: green; /* Green color only added to list items <li> because there's spacing in between list items*/
     padding: 0px 10px;
     overflow: auto; /* Allows scrolling if the content overflows */
     padding: 10px;
