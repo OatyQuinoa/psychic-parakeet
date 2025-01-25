@@ -1,3 +1,4 @@
 function calc(input) {
-  return input 
+  let output = "Here you go: " + input
+  return output 
 }
